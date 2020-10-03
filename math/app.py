@@ -132,7 +132,7 @@ class Substract(ttk.Frame):
 
         self.answer_value = tk.IntVar()
         first_label = ttk.Label(self, width=19, textvariable=self.a_value, style="MyLabel.TLabel")
-        operator_label = ttk.Label(self, width=19, text="ADD", style="MyLabel.TLabel")
+        operator_label = ttk.Label(self, width=19, text="MINUS", style="MyLabel.TLabel")
         second_label = ttk.Label(self, width=11, textvariable=self.b_value, style="MyLabel.TLabel")
         answer_input = ttk.Entry(self, width=18, textvariable=self.answer_value)
         first_label.grid(column=0, row=0, sticky="E")
