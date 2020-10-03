@@ -113,11 +113,11 @@ class AddCalculation(ttk.Frame):
         b = self.b_value.get()
         c = a + b
         if c == self.answer_value.get():
-            print(tk.messagebox.showinfo(title=(f"Your Answer is ", {self.answer_value.get()}),
-                                         message="you are correct"))
+            print(tk.messagebox.showinfo(title=(f"Answer", {self.answer_value.get()}),
+                                         message="You are correct"))
         else:
-            print(tk.messagebox.showinfo(title=(f"Your Answer is ", {self.answer_value.get()}),
-                                         message="you are not correct"))
+            print(tk.messagebox.showinfo(title=(f"Answer ", {self.answer_value.get()}),
+                                         message="You are not correct"))
 
     def getrandom(self):
         self.a_value.set(random.randint(1, 50))
@@ -179,11 +179,11 @@ class Substract(ttk.Frame):
         b = self.b_value.get()
         c = a - b
         if c == self.answer_value.get():
-            print(tk.messagebox.showinfo(title=(f"Your Answer is ", {self.answer_value.get()}),
-                                         message="you are correct"))
+            print(tk.messagebox.showinfo(title=(f"Answer ", {self.answer_value.get()}),
+                                         message="You are correct"))
         else:
-            print(tk.messagebox.showinfo(title=(f"Your Answer is ", {self.answer_value.get()}),
-                                         message="you are not correct"))
+            print(tk.messagebox.showinfo(title=(f"Answer ", {self.answer_value.get()}),
+                                         message="You are not correct"))
 
     def getrandom_2(self):
         self.a_value.set(random.randint(21, 50))
