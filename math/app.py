@@ -34,7 +34,7 @@ class MathCalculation(tk.Tk):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        self.title("Math for Ava")
+        self.title("Math for Ava (c) by Don_g_ta")
         self.frames = dict()
         container = ttk.Frame(self)
         container.grid(padx=10, pady=10, sticky="EW")
