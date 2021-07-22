@@ -1,4 +1,4 @@
-https://gist.github.com/donghuynh84/6c3f90fa925f989e4373f947e031b87aimport streamlit as st
+import streamlit as st
 import pandas as pd
 from sklearn import datasets
 from sklearn.metrics import accuracy_score
