@@ -10,10 +10,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from sklearn.decomposition import PCA
 
-
-
-
-
 st.title("Examples of different Machine Learning Algorithm")
 
 st.write("""
