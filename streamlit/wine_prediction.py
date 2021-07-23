@@ -65,10 +65,13 @@ st.write("""
 """)
 
 
+test_size_bar = st.sidebar.slider("Select your test size", 0.1, 0.4)
+max_depth_bar = st.sidebar.slider("Select your max depth", 2, 10)
+
 X = df.drop(['wine_class'], axis=1)
 y = df['wine_class']
-X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.33,random_state=101)
-clf = RandomForestClassifier(max_depth=2, random_state=101)
+X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=test_size_bar,random_state=101)
+clf = RandomForestClassifier(max_depth=max_depth_bar, random_state=101)
 clf.fit(X_train, y_train)
 y_preds = clf.predict(X_test)
 
